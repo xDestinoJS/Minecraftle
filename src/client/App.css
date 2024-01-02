@@ -1,0 +1,92 @@
+.crafting-area {
+  display:flex;
+  align-items: center;
+  gap:25px;
+  background: #c6c6c6;
+  width: min-content;
+  padding:15px;
+  box-sizing: border-box;
+  border-radius:5px;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.crafting-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  width:min-content;
+}
+
+.slot {
+  box-sizing: border-box;
+  text-align: center;
+  width:50px;
+  aspect-ratio:1;
+  background-image: url('./assets/slot.png');
+  background-size: cover;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  padding:5px;
+}
+
+.invisible-slot {
+  width:50px;
+  padding:5px;
+  box-sizing: border-box;
+  aspect-ratio:1;
+  pointer-events: none;
+  z-index:99;
+}
+
+.invisible-slot img {
+  width: 100%;
+  aspect-ratio: 1;
+  border: none;
+  pointer-events: none;
+}
+
+.slot img {
+  width: 100%;
+  aspect-ratio: 1;
+  border: none;
+  pointer-events: none;
+}
+
+.slot:hover {
+  filter: brightness(80%);
+}
+
+.inventory {
+  background: #c6c6c6;
+  width: min-content;
+  padding:15px;
+  box-sizing: border-box;
+  border-radius:5px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Three columns with equal width */
+  width:min-content;
+}
+
+* {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.delete-section {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: -1;
+}

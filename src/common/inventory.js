@@ -1,0 +1,20 @@
+export default [
+    "oak_planks",
+    "cobblestone",
+    "stone",
+    "glass",
+    "white_wool",
+    "stick",
+    "coal",
+    "diamond",
+    "gold_ingot",
+    "iron_ingot",
+    "redstone",
+    "quartz",
+    "oak_slab",
+    "oak_log",
+    "iron_nugget",
+    "redstone_torch",
+    "string",
+    "leather" 
+  ]
